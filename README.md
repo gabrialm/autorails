@@ -14,7 +14,7 @@
     `(1)` [`envGems.sh`](#envgemssh)  
     `(2)` [`src/_Gemfile`](#src_gemfile)  
     `(3)` [`src/_application.rb`](#src_applicationrb)  
-    `(4)` [`src/_database.yml`](#src_databaseyml)
+    `(4)` [`src/_database.yml`](#src_databaseyml)  
     `(5)` [`injectcode()`](#injectcode)  
 6. [helper functions](#helper-functions)  
     `(1)` [`ansi()`](#ansi)  
