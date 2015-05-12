@@ -21,8 +21,8 @@
     `(2)` [`title()`](#title)  
     `(3)` [`gitignore()`](#gitignore)  
 7. [script workflow](#script-workflows)  
-    `(1)` [`arinstall.sh`](#arinstall.sh)  
-    `(2)` [`autorails.sh`](#autorails.sh)
+    `(1)` [`arinstall.sh`](#arinstallsh)  
+    `(2)` [`autorails.sh`](#autorailssh)
 
 # description
 Shell Script to automate your local development environment for a new Rails-Bootstrap-MySQL project
