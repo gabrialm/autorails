@@ -1,0 +1,28 @@
+# config/database.yml
+# Enter relevant connection details for test and production. Development is preset
+
+development:
+  adapter: mysql2
+  encoding: utf8
+  username: admin
+  password: admin
+  host: 0.0.0.0
+  port: 3306
+
+test:
+  adapter: mysql2
+  encoding: utf8
+  database: 
+  username: 
+  password: 
+  host: 
+  port: 
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  database: 
+  username: 
+  password: 
+  host: 
+  port: 
