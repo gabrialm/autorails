@@ -20,8 +20,8 @@
     `(1)` [`ansi()`](#ansi)  
     `(2)` [`title()`](#title)  
     `(3)` [`gitignore()`](#gitignore)  
-7. [script workflow](#script-workflows)
-    `(1)` [`arinstall.sh`](#arinstall.sh)
+7. [script workflow](#script-workflows)  
+    `(1)` [`arinstall.sh`](#arinstall.sh)  
     `(2)` [`autorails.sh`](#autorails.sh)
 
 # description
