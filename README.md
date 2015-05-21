@@ -27,7 +27,7 @@
 # description
 Shell Script to automate your local development environment for a new Rails-Bootstrap-MySQL project
 
-This simple script was created to help manage the automation of the basic steps needed to prep for new project development. It's intended to follow a general core set of common Gems and Configuration tweaks common accross all projects. Included is a minimal list of Gems and Configuration elements suggested by Spark Master Flex as detailed in his blog post found here: http://goo.gl/atjMWE, along with some of my own tweaks.
+This simple script was created to help manage the automation of the basic steps needed to prep for new project development. It's intended to follow a general core set of common Gems and Configuration tweaks common across all projects. Included is a minimal list of Gems and Configuration elements suggested by Spark Master Flex as detailed in his blog post found here: http://goo.gl/atjMWE, along with some of my own tweaks.
 
 There are two target audiences for this script, but the core focus for both is the same: saving time. For beginner to intermediate Ruby/Rails developers, it allows one to set up a functional project without spending time reading documentation and instead focus more on developing code and learning syntax. When I started learning Ruby and Rails, I found everything involved with getting a project from nothing to something overwhelming, and actually fairly arbitrary and unnecessary when all I wanted to do was learn the syntax hands on in a sandbox like environment. For me reading through and following a manual is needlessly tedious, and prefer to start with an idea and consult resources when I become stuck on an issue.
 
@@ -49,7 +49,7 @@ May 11, 2015 - 1.0.0 - Initial production release - [Release Notes](RELEASE.md#1
 7. Create logging of all script activity for future troubleshooting purposes
 
 # installation
-This script is tested extensively against Ubuntu 12.04 (`Vagrant > ubuntu/trusty64`). Initial testing performed under LinuxMint 17.1 x64 revealed Ruby source and Gem dependency conflicts after several iterations of testing, which did not exist under `ubuntu/trusty64`
+This script is tested extensively against Ubuntu 14.04 (`Vagrant > ubuntu/trusty64`). Initial testing performed under LinuxMint 17.1 x64 revealed Ruby source and Gem dependency conflicts after several iterations of testing, which did not exist under `ubuntu/trusty64`
 
 Unless you want to install this to your native filesystem (Ubuntu), alternate ways you can utilize this script is via Vagrant, or Docker, and Boot2Docker for Windows and OS X.
 
