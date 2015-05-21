@@ -131,7 +131,7 @@ createproject() {
   title double "Inserting common gems into $PROJ/Gemfile"
     injectcode "3" "_Gemfile" "Gemfile"
     sed -i "4iruby '$RUBYVER'" $HOME/$WDIR/$PDIR/$PROJ/Gemfile
-    sed -i "5i#ruby-gemset=$RUBYVER" $HOME/$WDIR/$PDIR/$PROJ/Gemfile
+    sed -i "5i#ruby-gemset=$PROJ" $HOME/$WDIR/$PDIR/$PROJ/Gemfile
 
   title double "Adding configuration elements to $PROJ/config/application.rb"
     injectcode "22" "_application.rb" "config/application.rb"
