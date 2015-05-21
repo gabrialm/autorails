@@ -1,6 +1,6 @@
 #!/bin/bash
 source $HOME/.rvm/scripts/rvm
-alias instEnvGems="$HOME/$ADIR/instEnvGems.sh"
+alias instEnvGems="$HOME/$ADIR/envGems.sh"
 
 DEFAULTRUBY=2.2.2
 DEFAULTRAILS=4.2.1
@@ -124,20 +124,18 @@ createproject() {
 
   title double "Scaffolding $HOME/$WDIR/$PDIR/$PROJ"
     rails new . -d mysql -B
-    cp $HOME/$ADIR/src/_database.yml $HOME/$WDIR/$PDIR/$PROJ/config/database.yml
-    sed -i "6i\ \ database:\ ${PROJ}_development" $HOME/$WDIR/$PDIR/$PROJ/config/database.yml
-    rake db:create
 
-  title double "Inserting common gems into $PROJ/Gemfile"
+  title double "Configuring $PROJ Runtime Environment"
     injectcode "3" "_Gemfile" "Gemfile"
     sed -i "4iruby '$RUBYVER'" $HOME/$WDIR/$PDIR/$PROJ/Gemfile
     sed -i "5i#ruby-gemset=$PROJ" $HOME/$WDIR/$PDIR/$PROJ/Gemfile
+    cp $HOME/$ADIR/src/_database.yml $HOME/$WDIR/$PDIR/$PROJ/config/database.yml
+    sed -i "6i\ \ database:\ ${PROJ}_development" $HOME/$WDIR/$PDIR/$PROJ/config/database.yml
+    bundle install
+    rake db:create
 
   title double "Adding configuration elements to $PROJ/config/application.rb"
     injectcode "22" "_application.rb" "config/application.rb"
-
-  title double "Bundling updated Gemfile"
-    bundle install
 
   title double "Initializing local git repository"
     git init
