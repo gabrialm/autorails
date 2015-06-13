@@ -131,6 +131,9 @@ createproject() {
     sed -i "5i#ruby-gemset=$PROJ" $HOME/$WDIR/$PDIR/$PROJ/Gemfile
     cp $HOME/$ADIR/src/_database.yml $HOME/$WDIR/$PDIR/$PROJ/config/database.yml
     sed -i "6i\ \ database:\ ${PROJ}_development" $HOME/$WDIR/$PDIR/$PROJ/config/database.yml
+    mv $HOME/$WDIR/$PDIR/$PROJ/app/assets/stylesheets/application.css $HOME/$WDIR/$PDIR/$PROJ/app/assets/stylesheets/application.css.sass
+    injectcode "15" "_application.js" "app/assets/javascripts/application.js"
+    injectcode "16" "_application.css" "app/assets/stylesheets/application.css.sass"
     bundle install
     rake db:create
 
